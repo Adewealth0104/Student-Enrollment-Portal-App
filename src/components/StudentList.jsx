@@ -15,11 +15,13 @@ const StudentList = ({
       ) : (
         <div className="student-grid">
           {students.map((student) => (
+            
             <StudentCard
               key={student.id}
               student={student}
               getGrade={getGrade}
             />
+           
           ))}
         </div>
       )}

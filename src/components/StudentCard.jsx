@@ -12,6 +12,7 @@ const StudentCard = ({ student, getGrade }) => {
   const cardClass = isActive ? "card-active" : "card-inactive";
 
   return (
+   
     <div className={`student-card ${cardClass}`}>
       <img
         src={avatar}
@@ -32,6 +33,7 @@ const StudentCard = ({ student, getGrade }) => {
         </p>
       </div>
     </div>
+    
   );
 };
 
