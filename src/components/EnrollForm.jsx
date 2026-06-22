@@ -77,7 +77,7 @@ const EnrollForm = ({ tracks, onEnroll }) => {
     >
 
       <h2>Enroll New Student</h2>
-
+<div>
 
       <input
         value={firstName}
@@ -86,7 +86,13 @@ const EnrollForm = ({ tracks, onEnroll }) => {
         }
         placeholder="First Name"
       />
-
+       {errors.firstName && (
+    <span>
+      {errors.firstName}
+    </span>
+  )}
+</div>
+<div>
       <input
         value={lastName}
         onChange={(event) =>
@@ -94,8 +100,14 @@ const EnrollForm = ({ tracks, onEnroll }) => {
         }
         placeholder="Last Name"
       />
+       {errors.lastName && (
+    <span>
+      {errors.lastName}
+    </span>
+  )}
+</div>
 
-
+<div>
       <select
         value={track}
         onChange={(event) =>
@@ -113,8 +125,9 @@ const EnrollForm = ({ tracks, onEnroll }) => {
         ))}
 
       </select>
+      </div>
 
-
+<div>
       <input
         type="number"
         value={score}
@@ -123,15 +136,25 @@ const EnrollForm = ({ tracks, onEnroll }) => {
         }
         placeholder="Score"
       />
-
-
+{errors.score && (
+    <span>
+      {errors.score}
+    </span>
+  )}
+</div>
+<div>
       <input
         type="email"
         defaultValue=""
         ref={emailRef}
         placeholder="Email"
       />
-
+{errors.email && (
+    <span>
+      {errors.email}
+    </span>
+  )}
+</div>
 
       <label>
         <input
