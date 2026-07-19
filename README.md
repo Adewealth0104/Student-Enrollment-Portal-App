@@ -1,3 +1,7 @@
+# Updated Vercel Hosted Live Link
+https://student-enrollment-portal-app-eight.vercel.app/
+
+
 - Component-based architecture is a way of building applications using small, reusable components that make the code easier to manage and maintain.
 
 - The Virtual DOM is React's copy of the real DOM that helps update only the parts of the page that change, improving performance.
